@@ -77,13 +77,13 @@ function DisplayAlert()
     message += "Total Tickets : " + ticketCount();
     message += newLine;
     message += newLine;
-    message += "SubTotal : " + calculateSubTotal("subtotal-price");
+    message += "SubTotal : $" + calculateSubTotal("subtotal-price");
     message += newLine;
     message += newLine;
-    message += "Tax : " + calculateTax("tax-amount");
+    message += "Tax : $" + calculateTax("tax-amount");
     message += newLine;
     message += newLine;
-    message += "Total : " + calculateTotal("total-price");
+    message += "Total : $" + calculateTotal("total-price");
     alert(message);
 }
 
