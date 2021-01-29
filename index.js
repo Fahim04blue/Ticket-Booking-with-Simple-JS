@@ -146,6 +146,14 @@ EcoClassMinusBtn.addEventListener('click', function () {
 // Alert Message 
 const BookNowBtn = document.getElementById('book-now');
 BookNowBtn.addEventListener('click', function () {
-    DisplayAlert();
+    if(document.getElementById('firstClass-ticket-count').value == 0 && document.getElementById('eco-class-count').value == 0 )
+    {
+        alert (" You haven't selected any tickets yet");
+    }
+    else
+    {
+        DisplayAlert();
 
+    }
+    
 })
